@@ -17,6 +17,7 @@ final class MenuBuilder: NSObject, NSMenuDelegate {
     private let headerItem = NSMenuItem(title: String(localized: "Inactive"), action: nil, keyEquivalent: "")
     private let toggleItem = NSMenuItem(title: String(localized: "Turn On"), action: #selector(toggleSession), keyEquivalent: "")
     private var optionItems: [Option: NSMenuItem] = [:]
+    private var quickDurationItems: [SessionDuration: NSMenuItem] = [:]
     private var durationItems: [SessionDuration: NSMenuItem] = [:]
     private var customDurationItem: NSMenuItem?
     private var menuTimer: Timer?
@@ -44,7 +45,12 @@ final class MenuBuilder: NSObject, NSMenuDelegate {
         for (duration, item) in durationItems {
             item.state = duration == settings.defaultDuration ? .on : .off
         }
-        customDurationItem?.state = SessionDuration.presets.contains(settings.defaultDuration) ? .off : .on
+        for (duration, item) in quickDurationItems {
+            item.state = duration == settings.defaultDuration ? .on : .off
+        }
+        let durationHasMenuEntry = SessionDuration.presets.contains(settings.defaultDuration)
+            || quickDurationItems[settings.defaultDuration] != nil
+        customDurationItem?.state = durationHasMenuEntry ? .off : .on
         for (option, item) in optionItems {
             item.state = isEnabled(option) ? .on : .off
             if [.turnOffOnBattery, .batteryThreshold, .turnOnWhenChargerConnected].contains(option) {
@@ -81,6 +87,13 @@ final class MenuBuilder: NSObject, NSMenuDelegate {
         let index = sender.tag
         guard SessionDuration.presets.indices.contains(index) else { return }
         session.choose(SessionDuration.presets[index])
+        update()
+    }
+
+    @objc private func chooseQuickDuration(_ sender: NSMenuItem) {
+        let duration = SessionDuration.minutes(sender.tag)
+        guard quickDurationItems[duration] != nil else { return }
+        session.choose(duration)
         update()
     }
 
@@ -124,6 +137,19 @@ final class MenuBuilder: NSObject, NSMenuDelegate {
         toggleItem.target = self
         toggleItem.action = #selector(toggleSession)
         menu.addItem(toggleItem)
+        menu.addItem(.separator())
+
+        let quickHeaderItem = NSMenuItem(title: String(localized: "Quick session"), action: nil, keyEquivalent: "")
+        quickHeaderItem.isEnabled = false
+        menu.addItem(quickHeaderItem)
+        for minutes in [20, 50, 120] {
+            let duration = SessionDuration.minutes(minutes)
+            let item = NSMenuItem(title: duration.displayName, action: #selector(chooseQuickDuration(_:)), keyEquivalent: "")
+            item.tag = minutes
+            item.target = self
+            quickDurationItems[duration] = item
+            menu.addItem(item)
+        }
         menu.addItem(.separator())
 
         let durationParent = NSMenuItem(title: String(localized: "Duration"), action: nil, keyEquivalent: "")

@@ -35,15 +35,8 @@ final class StatusItemController: NSObject {
     func update() {
         guard let button = statusItem.button else { return }
         let active = session.isActive
-        let symbol = active ? "cup.and.saucer.fill" : "cup.and.saucer"
-        let image = NSImage(systemSymbolName: symbol, accessibilityDescription: nil)
-        if active && settings.useAccentColor {
-            button.image = image?.withSymbolConfiguration(NSImage.SymbolConfiguration(paletteColors: [NSColor.controlAccentColor]))
-            button.image?.isTemplate = false
-        } else {
-            button.image = image
-            button.image?.isTemplate = true
-        }
+        let tint = active && settings.useAccentColor ? NSColor.controlAccentColor : nil
+        button.image = BeaconMenuIcon.image(active: active, tint: tint)
         if settings.showRemainingTime, let remaining = session.remainingMinutes() {
             button.title = countdownText(remaining)
             button.font = .monospacedDigitSystemFont(ofSize: NSFont.systemFontSize, weight: .regular)

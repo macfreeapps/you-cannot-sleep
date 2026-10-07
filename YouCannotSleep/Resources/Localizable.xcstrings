@@ -297,12 +297,12 @@
         }
       }
     },
-    "Coffee cup app icon" : {
+    "Lighthouse app icon" : {
       "localizations" : {
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Biểu tượng ứng dụng hình cốc cà phê"
+            "value" : "Biểu tượng ứng dụng hình ngọn hải đăng"
           }
         }
       }
@@ -317,12 +317,12 @@
         }
       }
     },
-    "Control-click the cup to open the menu at any time." : {
+    "Control-click the menu bar icon to open the menu at any time." : {
       "localizations" : {
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nhấn Control và bấm vào biểu tượng cốc để mở menu bất cứ lúc nào."
+            "value" : "Nhấn Control và bấm vào biểu tượng trên thanh menu để mở menu bất cứ lúc nào."
           }
         }
       }
@@ -723,6 +723,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xác nhận nguồn điện không thành công, mã trạng thái %d."
+          }
+        }
+      }
+    },
+    "Quick session" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên nhanh"
           }
         }
       }

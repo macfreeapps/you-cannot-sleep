@@ -1,6 +1,6 @@
 name: YouCannotSleep
 options:
-  bundleIdPrefix: io.github.owner
+  bundleIdPrefix: io.github.tarudesu
   deploymentTarget:
     macOS: "13.0"
   createIntermediateGroups: true
@@ -18,7 +18,7 @@ settings:
     INFOPLIST_KEY_CFBundleShortVersionString: "1.0.0"
     INFOPLIST_KEY_LSUIElement: YES
     INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 You Cannot Sleep contributors"
-    PRODUCT_BUNDLE_IDENTIFIER: io.github.owner.YouCannotSleep
+    PRODUCT_BUNDLE_IDENTIFIER: io.github.tarudesu.YouCannotSleep
     PRODUCT_NAME: "You Cannot Sleep"
     SWIFT_EMIT_LOC_STRINGS: YES
     ENABLE_APP_SANDBOX: YES
@@ -42,7 +42,7 @@ targets:
         OSAScriptingDefinition: YouCannotSleep.sdef
         LSApplicationCategoryType: public.app-category.utilities
         CFBundleURLTypes:
-          - CFBundleURLName: io.github.owner.YouCannotSleep
+          - CFBundleURLName: io.github.tarudesu.YouCannotSleep
             CFBundleURLSchemes:
               - youcannotsleep
     sources:
@@ -71,7 +71,7 @@ targets:
       - target: YouCannotSleep
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: io.github.owner.YouCannotSleepTests
+        PRODUCT_BUNDLE_IDENTIFIER: io.github.tarudesu.YouCannotSleepTests
         PRODUCT_NAME: YouCannotSleepTests
         PRODUCT_MODULE_NAME: YouCannotSleepTests
         MACOSX_DEPLOYMENT_TARGET: "14.0"

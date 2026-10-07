@@ -11,11 +11,11 @@ struct AboutView: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            Image("CoffeeMark")
+            Image("BeaconMark")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 70, height: 70)
-                .accessibilityLabel(String(localized: "Coffee cup app icon"))
+                .accessibilityLabel(String(localized: "Lighthouse app icon"))
             Text(AppInfo.displayName).font(.title2.weight(.semibold))
             Text(version).font(.caption).foregroundStyle(.secondary)
             Text(String(localized: "A small menu bar utility that keeps your Mac awake."))
@@ -31,7 +31,7 @@ struct AboutView: View {
             VStack(alignment: .leading, spacing: 7) {
                 Text(String(localized: "Frequently asked questions")).font(.headline)
                 faq("Can it keep the Mac awake with the lid closed?", answer: "No. Closing the MacBook lid triggers clamshell sleep, which power assertions cannot prevent.")
-                faq("How do I open the menu if left-click toggling is on?", answer: "Control-click the cup to open the menu at any time.")
+                faq("How do I open the menu if left-click toggling is on?", answer: "Control-click the menu bar icon to open the menu at any time.")
                 faq("Does my Mac need to be plugged in?", answer: "No. The app can keep your Mac awake on battery; battery options let you control that behavior.")
             }
             .frame(maxWidth: .infinity, alignment: .leading)

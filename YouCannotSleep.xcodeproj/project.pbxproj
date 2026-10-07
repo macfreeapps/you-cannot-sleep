@@ -36,6 +36,7 @@
 		BE0D1F44A5AC41144225EEB7 /* YouCannotSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DF7D68F3D82943460BDAAE /* YouCannotSleepApp.swift */; };
 		BF12A3ECFEFA7DF2BFAD51CE /* HotKeyRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5A6D66637B48A2C240DD6 /* HotKeyRecorderView.swift */; };
 		C3F5978D61DA3C52FAA1FFED /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE7074869AF898142A0A86 /* WindowManager.swift */; };
+		D107857A454A89C8DD1B65BB /* BeaconMenuIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A574798AEC48CFBA5C71570D /* BeaconMenuIcon.swift */; };
 		F2F0622B6454E6D4BBC9E6C1 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA9808BA503FABD07CC33CC /* SessionController.swift */; };
 		F485BEBA2986758AB39F50D5 /* StatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D607764E77E785A1184699E /* StatusItemController.swift */; };
 		FB6DD7C0B38D72F1D22E12E5 /* SystemEventsMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C756568C8F8AA55EECA14DA2 /* SystemEventsMonitor.swift */; };
@@ -71,6 +72,7 @@
 		8E9B51D3FABA907A2EDF9BDF /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		99AC43C55C162DC27BABA0C3 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		A1CAC31626C1FA68EEBBB1D0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A574798AEC48CFBA5C71570D /* BeaconMenuIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconMenuIcon.swift; sourceTree = "<group>"; };
 		A7EB0417DBEA5FD5C3C8D4E1 /* MenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBuilder.swift; sourceTree = "<group>"; };
 		ABE782C6C67F6873E23BD0E8 /* Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
 		AFAB8FB6FEFF88E047D4173A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		8755B9658E331C6A2219D08A /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
+				A574798AEC48CFBA5C71570D /* BeaconMenuIcon.swift */,
 				A7EB0417DBEA5FD5C3C8D4E1 /* MenuBuilder.swift */,
 				3D607764E77E785A1184699E /* StatusItemController.swift */,
 			);
@@ -315,6 +318,7 @@
 				36EF01D2EFF9ECC1F3A701F0 /* AppInfo.swift in Sources */,
 				64F54AEB7498A251A6939C69 /* AppRuntime.swift in Sources */,
 				9CD855DC70433635CE4B4175 /* AppleScriptCommands.swift in Sources */,
+				D107857A454A89C8DD1B65BB /* BeaconMenuIcon.swift in Sources */,
 				BC4C0A461C2F32EADE3F6CB6 /* Clock.swift in Sources */,
 				6EC0C0C9C453D44EE5E5A514 /* CustomDurationView.swift in Sources */,
 				82BCE481A92853C7DA4BA3A8 /* Duration.swift in Sources */,
@@ -423,7 +427,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.owner.YouCannotSleep;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.tarudesu.YouCannotSleep;
 				PRODUCT_NAME = "You Cannot Sleep";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -446,7 +450,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.owner.YouCannotSleepTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.tarudesu.YouCannotSleepTests;
 				PRODUCT_MODULE_NAME = YouCannotSleepTests;
 				PRODUCT_NAME = YouCannotSleepTests;
 				SDKROOT = macosx;
@@ -504,7 +508,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.owner.YouCannotSleepTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.tarudesu.YouCannotSleepTests;
 				PRODUCT_MODULE_NAME = YouCannotSleepTests;
 				PRODUCT_NAME = YouCannotSleepTests;
 				SDKROOT = macosx;
@@ -583,7 +587,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.owner.YouCannotSleep;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.tarudesu.YouCannotSleep;
 				PRODUCT_NAME = "You Cannot Sleep";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;

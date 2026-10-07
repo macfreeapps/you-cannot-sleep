@@ -102,19 +102,19 @@ struct YouCannotSleepShortcuts: AppShortcutsProvider {
             intent: ToggleSessionIntent(),
             phrases: ["Toggle \(.applicationName)", "Keep my Mac awake with \(.applicationName)"],
             shortTitle: "Toggle session",
-            systemImageName: "cup.and.saucer"
+            systemImageName: "light.beacon.max"
         )
         AppShortcut(
             intent: TurnOnSessionIntent(),
             phrases: ["Turn on \(.applicationName)"],
             shortTitle: "Turn on",
-            systemImageName: "cup.and.saucer.fill"
+            systemImageName: "light.beacon.max.fill"
         )
         AppShortcut(
             intent: TurnOffSessionIntent(),
             phrases: ["Turn off \(.applicationName)"],
             shortTitle: "Turn off",
-            systemImageName: "cup.and.saucer"
+            systemImageName: "light.beacon.max"
         )
         AppShortcut(
             intent: GetSessionStatusIntent(),

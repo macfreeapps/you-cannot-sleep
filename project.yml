@@ -1,0 +1,93 @@
+name: YouCannotSleep
+options:
+  bundleIdPrefix: io.github.owner
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO
+    CODE_SIGN_ENTITLEMENTS: YouCannotSleep/Resources/YouCannotSleep.entitlements
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_CFBundleDisplayName: "You Cannot Sleep"
+    INFOPLIST_KEY_CFBundleShortVersionString: "1.0.0"
+    INFOPLIST_KEY_LSUIElement: YES
+    INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 You Cannot Sleep contributors"
+    PRODUCT_BUNDLE_IDENTIFIER: io.github.owner.YouCannotSleep
+    PRODUCT_NAME: "You Cannot Sleep"
+    SWIFT_EMIT_LOC_STRINGS: YES
+    ENABLE_APP_SANDBOX: YES
+    ENABLE_RESOURCE_ACCESS_AUDIO_INPUT: NO
+    ENABLE_RESOURCE_ACCESS_CAMERA: NO
+    ENABLE_RESOURCE_ACCESS_CONTACTS: NO
+    ENABLE_RESOURCE_ACCESS_LOCATION: NO
+    ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY: NO
+    ENABLE_RESOURCE_ACCESS_PRINTING: NO
+    ENABLE_RESOURCE_ACCESS_USB: NO
+targets:
+  YouCannotSleep:
+    type: application
+    platform: macOS
+    info:
+      path: YouCannotSleep/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: "You Cannot Sleep"
+        LSUIElement: true
+        NSAppleScriptEnabled: true
+        OSAScriptingDefinition: YouCannotSleep.sdef
+        LSApplicationCategoryType: public.app-category.utilities
+        CFBundleURLTypes:
+          - CFBundleURLName: io.github.owner.YouCannotSleep
+            CFBundleURLSchemes:
+              - youcannotsleep
+    sources:
+      - path: YouCannotSleep
+    resources:
+      - path: YouCannotSleep/Resources/Assets.xcassets
+      - path: YouCannotSleep/Resources/Localizable.xcstrings
+      - path: YouCannotSleep/Resources/vi.lproj/AppShortcuts.strings
+      - path: YouCannotSleep/Resources/vi.lproj/InfoPlist.strings
+      - path: YouCannotSleep/Automation/YouCannotSleep.sdef
+    settings:
+      base:
+        CODE_SIGN_STYLE: Automatic
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: "5.0"
+        PRODUCT_MODULE_NAME: YouCannotSleep
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies: []
+  YouCannotSleepTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: YouCannotSleepTests
+    dependencies:
+      - target: YouCannotSleep
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.github.owner.YouCannotSleepTests
+        PRODUCT_NAME: YouCannotSleepTests
+        PRODUCT_MODULE_NAME: YouCannotSleepTests
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/You Cannot Sleep.app/Contents/MacOS/You Cannot Sleep"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  YouCannotSleep:
+    build:
+      targets:
+        YouCannotSleep: all
+        YouCannotSleepTests: [test]
+    test:
+      targets:
+        - YouCannotSleepTests
+    run:
+      config: Debug
+    archive:
+      config: Release

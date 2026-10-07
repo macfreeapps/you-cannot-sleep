@@ -1,0 +1,44 @@
+name: macOS CI
+
+on:
+  push:
+    branches:
+      - "**"
+    tags:
+      - "v*"
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test
+        run: xcodebuild test -project YouCannotSleep.xcodeproj -scheme YouCannotSleep -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive app
+        run: xcodebuild archive -project YouCannotSleep.xcodeproj -scheme YouCannotSleep -configuration Release -archivePath build/YouCannotSleep.xcarchive CODE_SIGN_IDENTITY=- CODE_SIGNING_REQUIRED=YES CODE_SIGNING_ALLOWED=YES
+      - name: Package app
+        run: ditto -c -k --sequesterRsrc --keepParent 'build/YouCannotSleep.xcarchive/Products/Applications/You Cannot Sleep.app' 'build/You-Cannot-Sleep-macOS.zip'
+      # To notarize a Developer ID signed build, enable this step and add the listed repository secrets.
+      # - name: Notarize
+      #   env:
+      #     APPLE_ID: ${{ secrets.APPLE_ID }}
+      #     APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      #     APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+      #   run: xcrun notarytool submit 'build/You-Cannot-Sleep-macOS.zip' --apple-id "$APPLE_ID" --team-id "$APPLE_TEAM_ID" --password "$APPLE_APP_SPECIFIC_PASSWORD" --wait
+      - name: Attach app to GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release create "$GITHUB_REF_NAME" --generate-notes --title "$GITHUB_REF_NAME"
+          fi
+          gh release upload "$GITHUB_REF_NAME" 'build/You-Cannot-Sleep-macOS.zip' --clobber

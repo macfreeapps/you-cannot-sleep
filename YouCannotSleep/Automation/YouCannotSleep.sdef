@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="You Cannot Sleep Suite">
+  <suite name="Standard Suite" code="????" description="Common application scripting commands.">
+    <command name="quit" code="aevtquit" description="Quit the application.">
+      <cocoa class="QuitYouCannotSleepCommand"/>
+    </command>
+    <class name="application" code="capp" description="The application's top-level scripting object.">
+      <cocoa class="NSApplication"/>
+      <property name="name" code="pnam" type="text" access="r" description="The name of the application."/>
+      <property name="active" code="isac" type="boolean" access="r" description="Whether an awake session is active.">
+        <cocoa key="active"/>
+      </property>
+      <property name="remaining minutes" code="rmin" type="integer" access="r" description="Minutes remaining; zero if inactive or indefinite.">
+        <cocoa key="remainingMinutes"/>
+      </property>
+      <responds-to command="quit">
+        <cocoa method="handleQuitScriptCommand:"/>
+      </responds-to>
+    </class>
+  </suite>
+  <suite name="You Cannot Sleep Suite" code="YcSl" description="Control awake sessions.">
+    <command name="toggle" code="YcSlTogl" description="Toggle the awake session.">
+      <cocoa class="ToggleYouCannotSleepCommand"/>
+    </command>
+    <command name="turn on" code="YcSlOn__" description="Keep the Mac awake, optionally for a number of minutes.">
+      <parameter name="for" code="frmn" type="integer" optional="yes" description="The number of minutes, from 1 to 1440."/>
+      <cocoa class="TurnOnYouCannotSleepCommand"/>
+    </command>
+    <command name="turn off" code="YcSlOff_" description="Allow the Mac to sleep again.">
+      <cocoa class="TurnOffYouCannotSleepCommand"/>
+    </command>
+  </suite>
+</dictionary>

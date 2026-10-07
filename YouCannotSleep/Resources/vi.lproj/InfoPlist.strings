@@ -1,0 +1,9 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "You Cannot Sleep";
+
+/* Bundle name */
+"CFBundleName" = "You Cannot Sleep";
+
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "Bản quyền © 2026, các cộng tác viên You Cannot Sleep";
+

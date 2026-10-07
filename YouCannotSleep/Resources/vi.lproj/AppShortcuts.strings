@@ -1,0 +1,15 @@
+/* No comment provided by engineer. */
+"Get ${applicationName} status" = "Lấy trạng thái ${applicationName}";
+
+/* No comment provided by engineer. */
+"Keep my Mac awake with ${applicationName}" = "Giữ máy Mac của tôi luôn thức bằng ${applicationName}";
+
+/* No comment provided by engineer. */
+"Toggle ${applicationName}" = "Bật/tắt ${applicationName}";
+
+/* No comment provided by engineer. */
+"Turn off ${applicationName}" = "Tắt ${applicationName}";
+
+/* No comment provided by engineer. */
+"Turn on ${applicationName}" = "Bật ${applicationName}";
+

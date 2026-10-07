@@ -1,0 +1,1198 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld hours" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld giờ"
+          }
+        }
+      }
+    },
+    "%lld hours %lld minutes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld hours %2$lld minutes"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld giờ %2$lld phút"
+          }
+        }
+      }
+    },
+    "%lld min" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld phút"
+          }
+        }
+      }
+    },
+    "%lld minutes" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld phút"
+          }
+        }
+      }
+    },
+    "%lld minutes remaining" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Còn %lld phút"
+          }
+        }
+      }
+    },
+    "1 hour" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 giờ"
+          }
+        }
+      }
+    },
+    "A small menu bar utility that keeps your Mac awake." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiện ích nhỏ trên thanh menu giúp máy Mac luôn hoạt động."
+          }
+        }
+      }
+    },
+    "About You Cannot Sleep" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giới thiệu về You Cannot Sleep"
+          }
+        }
+      }
+    },
+    "Activate on launch" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật khi khởi chạy"
+          }
+        }
+      }
+    },
+    "Active" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang hoạt động"
+          }
+        }
+      }
+    },
+    "Active · %lld min left" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang hoạt động · còn %lld phút"
+          }
+        }
+      }
+    },
+    "Active indefinitely" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang hoạt động vô thời hạn"
+          }
+        }
+      }
+    },
+    "Allow display to sleep" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cho phép màn hình ngủ"
+          }
+        }
+      }
+    },
+    "Allow screen saver" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cho phép trình bảo vệ màn hình"
+          }
+        }
+      }
+    },
+    "Allow the Mac to sleep again." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cho phép máy Mac ngủ lại."
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giao diện"
+          }
+        }
+      }
+    },
+    "AppleScript" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AppleScript"
+          }
+        }
+      }
+    },
+    "Automation" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động hóa"
+          }
+        }
+      }
+    },
+    "Awake session" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên giữ máy thức"
+          }
+        }
+      }
+    },
+    "Awake Session Status" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trạng thái phiên giữ máy thức"
+          }
+        }
+      }
+    },
+    "Battery" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pin"
+          }
+        }
+      }
+    },
+    "Battery threshold: %lld%%" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngưỡng pin: %lld%%"
+          }
+        }
+      }
+    },
+    "Behavior" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hành vi"
+          }
+        }
+      }
+    },
+    "Can it keep the Mac awake with the lid closed?" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ứng dụng có thể giữ máy Mac thức khi đóng nắp không?"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy"
+          }
+        }
+      }
+    },
+    "Charger connected" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã kết nối bộ sạc"
+          }
+        }
+      }
+    },
+    "Check your power settings and try again." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiểm tra cài đặt nguồn rồi thử lại."
+          }
+        }
+      }
+    },
+    "Choose a duration from 1 minute to 24 hours." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn thời lượng từ 1 phút đến 24 giờ."
+          }
+        }
+      }
+    },
+    "Clear" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa"
+          }
+        }
+      }
+    },
+    "Coffee cup app icon" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biểu tượng ứng dụng hình cốc cà phê"
+          }
+        }
+      }
+    },
+    "Control-click always opens the menu." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhấn Control và bấm để luôn mở menu."
+          }
+        }
+      }
+    },
+    "Control-click the cup to open the menu at any time." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhấn Control và bấm vào biểu tượng cốc để mở menu bất cứ lúc nào."
+          }
+        }
+      }
+    },
+    "Copy" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sao chép"
+          }
+        }
+      }
+    },
+    "Couldn't keep your Mac awake" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể giữ máy Mac thức"
+          }
+        }
+      }
+    },
+    "Custom Duration" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời lượng tùy chỉnh"
+          }
+        }
+      }
+    },
+    "Custom…" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tùy chỉnh…"
+          }
+        }
+      }
+    },
+    "Default duration" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời lượng mặc định"
+          }
+        }
+      }
+    },
+    "Does my Mac need to be plugged in?" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máy Mac có cần cắm sạc không?"
+          }
+        }
+      }
+    },
+    "Duration" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời lượng"
+          }
+        }
+      }
+    },
+    "Duration in minutes" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời lượng tính bằng phút"
+          }
+        }
+      }
+    },
+    "Enter a duration from 1 minute to 24 hours." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập thời lượng từ 1 phút đến 24 giờ."
+          }
+        }
+      }
+    },
+    "Frequently asked questions" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Câu hỏi thường gặp"
+          }
+        }
+      }
+    },
+    "General" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chung"
+          }
+        }
+      }
+    },
+    "Get status" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lấy trạng thái"
+          }
+        }
+      }
+    },
+    "Get whether the awake session is active and how much time remains." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xem phiên giữ máy thức có đang hoạt động hay không và thời gian còn lại."
+          }
+        }
+      }
+    },
+    "Get You Cannot Sleep Status" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lấy trạng thái You Cannot Sleep"
+          }
+        }
+      }
+    },
+    "GitHub" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub"
+          }
+        }
+      }
+    },
+    "Got it" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã hiểu"
+          }
+        }
+      }
+    },
+    "Hours: %lld" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giờ: %lld"
+          }
+        }
+      }
+    },
+    "How do I open the menu if left-click toggling is on?" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Làm cách nào để mở menu khi bật chế độ nhấp trái để bật/tắt?"
+          }
+        }
+      }
+    },
+    "Inactive" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không hoạt động"
+          }
+        }
+      }
+    },
+    "Include Command, Option, or Control." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cần có phím Command, Option hoặc Control."
+          }
+        }
+      }
+    },
+    "Indefinite or inactive" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vô thời hạn hoặc không hoạt động"
+          }
+        }
+      }
+    },
+    "Indefinitely" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vô thời hạn"
+          }
+        }
+      }
+    },
+    "Keep the Mac awake, optionally for a number of minutes." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giữ máy Mac thức, có thể đặt thời lượng theo phút."
+          }
+        }
+      }
+    },
+    "Keep your Mac awake" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giữ máy Mac thức"
+          }
+        }
+      }
+    },
+    "Keeping your Mac awake." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang giữ máy Mac thức."
+          }
+        }
+      }
+    },
+    "Key %u" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phím %u"
+          }
+        }
+      }
+    },
+    "Launch at login" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khởi chạy khi đăng nhập"
+          }
+        }
+      }
+    },
+    "Leave empty to use the saved duration." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để trống để dùng thời lượng đã lưu."
+          }
+        }
+      }
+    },
+    "Left-click opens the menu; right-click toggles." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhấp trái để mở menu; nhấp phải để bật/tắt."
+          }
+        }
+      }
+    },
+    "License" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giấy phép"
+          }
+        }
+      }
+    },
+    "Minutes: %lld" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phút: %lld"
+          }
+        }
+      }
+    },
+    "No. Closing the MacBook lid triggers clamshell sleep, which power assertions cannot prevent." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không. Đóng nắp MacBook sẽ đưa máy vào chế độ ngủ khi đóng nắp; xác nhận nguồn điện không thể ngăn việc này."
+          }
+        }
+      }
+    },
+    "No. The app can keep your Mac awake on battery; battery options let you control that behavior." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không. Ứng dụng có thể giữ máy Mac thức khi dùng pin; các tùy chọn pin cho phép bạn kiểm soát hành vi này."
+          }
+        }
+      }
+    },
+    "Notifications" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo"
+          }
+        }
+      }
+    },
+    "Notifications are disabled in System Settings." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo đang bị tắt trong Cài đặt hệ thống."
+          }
+        }
+      }
+    },
+    "Open Login Items" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở mục Đăng nhập"
+          }
+        }
+      }
+    },
+    "Open Settings" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở Cài đặt"
+          }
+        }
+      }
+    },
+    "Open the menu or toggle the awake session." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở menu hoặc bật/tắt phiên giữ máy thức."
+          }
+        }
+      }
+    },
+    "Options" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tùy chọn"
+          }
+        }
+      }
+    },
+    "Power assertion failed with status %d" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xác nhận nguồn điện không thành công, mã trạng thái %d."
+          }
+        }
+      }
+    },
+    "Press a key with Command, Option, or Control." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhấn phím cùng với Command, Option hoặc Control."
+          }
+        }
+      }
+    },
+    "Quit You Cannot Sleep" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thoát You Cannot Sleep"
+          }
+        }
+      }
+    },
+    "Record global keyboard shortcut" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ghi phím tắt toàn cục"
+          }
+        }
+      }
+    },
+    "Record shortcut" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ghi phím tắt"
+          }
+        }
+      }
+    },
+    "Remaining minutes" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số phút còn lại"
+          }
+        }
+      }
+    },
+    "Report an issue" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo cáo sự cố"
+          }
+        }
+      }
+    },
+    "Session ended" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên đã kết thúc"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt"
+          }
+        }
+      }
+    },
+    "Settings…" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt…"
+          }
+        }
+      }
+    },
+    "Shortcut" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phím tắt"
+          }
+        }
+      }
+    },
+    "Shortcuts" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phím tắt"
+          }
+        }
+      }
+    },
+    "Show remaining time in menu bar" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị thời gian còn lại trên thanh menu"
+          }
+        }
+      }
+    },
+    "Show welcome again" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị lại phần chào mừng"
+          }
+        }
+      }
+    },
+    "Space" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phím cách"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu"
+          }
+        }
+      }
+    },
+    "Suggested shortcut: Control–Option–Command–S" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phím tắt gợi ý: Control–Option–Command–S"
+          }
+        }
+      }
+    },
+    "That shortcut is already in use." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phím tắt này đang được sử dụng."
+          }
+        }
+      }
+    },
+    "Time's up" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hết giờ"
+          }
+        }
+      }
+    },
+    "Toggle session" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật/tắt phiên"
+          }
+        }
+      }
+    },
+    "Toggle the awake session." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật/tắt phiên giữ máy thức."
+          }
+        }
+      }
+    },
+    "Toggle with left click" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật/tắt bằng nhấp trái"
+          }
+        }
+      }
+    },
+    "Toggle You Cannot Sleep" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật/tắt You Cannot Sleep"
+          }
+        }
+      }
+    },
+    "Toggle, turn on, turn off, and get status." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật/tắt, bật, tắt và xem trạng thái."
+          }
+        }
+      }
+    },
+    "Turn off" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tắt"
+          }
+        }
+      }
+    },
+    "Turn Off" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tắt"
+          }
+        }
+      }
+    },
+    "Turn off below %lld%%" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tắt khi pin dưới %lld%%"
+          }
+        }
+      }
+    },
+    "Turn off below battery level" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tắt khi pin xuống dưới mức đã đặt"
+          }
+        }
+      }
+    },
+    "Turn off on battery power" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tắt khi dùng pin"
+          }
+        }
+      }
+    },
+    "Turn Off You Cannot Sleep" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tắt You Cannot Sleep"
+          }
+        }
+      }
+    },
+    "Turn on" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật"
+          }
+        }
+      }
+    },
+    "Turn On" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật"
+          }
+        }
+      }
+    },
+    "Turn on when charger connected" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật khi kết nối bộ sạc"
+          }
+        }
+      }
+    },
+    "Turn on when charger is connected" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật khi đã kết nối bộ sạc"
+          }
+        }
+      }
+    },
+    "Turn On You Cannot Sleep" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật You Cannot Sleep"
+          }
+        }
+      }
+    },
+    "Type a shortcut…" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập phím tắt…"
+          }
+        }
+      }
+    },
+    "URL scheme" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lược đồ URL"
+          }
+        }
+      }
+    },
+    "Use accent color when active" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng màu nhấn khi đang hoạt động"
+          }
+        }
+      }
+    },
+    "Version %@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Version %1$@ (%2$@)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên bản %1$@ (%2$@)"
+          }
+        }
+      }
+    },
+    "Welcome" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chào mừng"
+          }
+        }
+      }
+    },
+    "You Cannot Sleep lives in the menu bar." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You Cannot Sleep nằm trên thanh menu."
+          }
+        }
+      }
+    },
+    "You Cannot Sleep, active" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You Cannot Sleep, đang hoạt động"
+          }
+        }
+      }
+    },
+    "You Cannot Sleep, active, %lld minutes remaining" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You Cannot Sleep, đang hoạt động, còn %lld phút"
+          }
+        }
+      }
+    },
+    "You Cannot Sleep, inactive" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You Cannot Sleep, không hoạt động"
+          }
+        }
+      }
+    },
+    "Your Mac can sleep again." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máy Mac của bạn có thể ngủ lại."
+          }
+        }
+      }
+    },
+    "Your Mac cannot sleep now." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máy Mac của bạn sẽ không ngủ lúc này."
+          }
+        }
+      }
+    },
+    "Your Mac is now being kept awake." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máy Mac của bạn đang được giữ thức."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

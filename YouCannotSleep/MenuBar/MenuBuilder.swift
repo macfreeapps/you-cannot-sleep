@@ -34,7 +34,6 @@ final class MenuBuilder: NSObject, NSPopoverDelegate {
             loginItems: loginItems,
             notifications: notifications,
             height: height,
-            onCustomDuration: { [weak self] in self?.openCustomDuration() },
             onSettings: { [weak self] in
                 self?.popover.performClose(nil)
                 self?.windows.openSettings()
@@ -63,10 +62,4 @@ final class MenuBuilder: NSObject, NSPopoverDelegate {
         popover.contentViewController = nil
     }
 
-    private func openCustomDuration() {
-        popover.performClose(nil)
-        windows.openCustomDuration { [weak session] duration in
-            session?.choose(duration)
-        }
-    }
 }

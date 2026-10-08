@@ -16,17 +16,17 @@ Run this checklist on supported macOS releases (13, 14, 15, and 26) where hardwa
 
 ## Menu and windows
 
-- [ ] Choose each timed duration button and the standalone Indefinitely button; confirm activation or restart, selection feedback, and countdown updates. Confirm More durations contains only finite presets and Custom opens the duration editor.
-- [ ] Check the original lighthouse app icon and the custom menu bar glyph in light/dark appearances, active/inactive states, and with accent coloring enabled.
+- [ ] Choose each timed duration button and the standalone Indefinitely button; confirm activation or restart, selection feedback, and countdown updates. Confirm More durations contains only finite presets and Custom expands the inline hour/minute fields without opening another window.
+- [ ] Check the original lighthouse app icon and the custom menu bar glyph in light/dark appearances, active neon-yellow and inactive monochrome states.
 - [ ] Left-click, right-click, and Control-click route correctly with both click behavior settings.
 - [ ] Repeat on built-in and external displays, including a multi-display arrangement.
 - [ ] Confirm the status item remains accessible with VoiceOver and the countdown is stable in width.
 - [ ] Confirm the panel header refreshes while open, timers stop after it closes, and clicking outside or pressing Escape dismisses it.
 - [ ] Use keyboard focus and Return to activate buttons; verify VoiceOver announces duration names and selected state.
 - [ ] Expand Options, scroll to every toggle, and confirm the footer remains accessible on small screens.
-- [ ] Check Settings, Welcome, About, and custom duration window focus and single-instance behavior.
+- [ ] Check Settings, Welcome, and About window focus and single-instance behavior. Verify the inline custom fields accept valid and invalid hour/minute values.
 - [ ] Enable “Group windows by application” in Mission Control and confirm there is no empty window.
-- [ ] Check Light mode, Dark mode, accent color updates, and Retina/non-Retina displays.
+- [ ] Check Light mode, Dark mode, and Retina/non-Retina displays.
 
 ## Power source and notifications
 

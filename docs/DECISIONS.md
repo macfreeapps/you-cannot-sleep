@@ -1,7 +1,7 @@
 # Implementation decisions
 
 - **Release identity:** The published bundle ID uses `io.github.macfreeapps.YouCannotSleep`, and in-app repository links point to the public `macfreeapps/you-cannot-sleep` repository.
-- **Custom duration:** Custom sessions use an hours-and-minutes stepper and persist the resulting minute count. The optional “until a specific time” mode is omitted to keep duration behavior small and predictable.
+- **Custom duration:** The Custom control expands an inline hours-and-minutes editor inside the menu bar panel. Entered values persist as a minute count when selected. The optional “until a specific time” mode is omitted to keep duration behavior small and predictable.
 - **Assertion updates:** Existing assertion types are retained while missing types are created; obsolete types are released only after successful creation. This avoids a zero-assertion gap and does not create duplicate assertions of the same type.
 - **Screen saver fallback:** The low-frequency `IOPMAssertionDeclareUserActivity` fallback is not enabled until screen saver behavior has been manually verified on each supported macOS version. The default path asks IOKit to prevent idle display sleep.
 - **Performance measurements:** A macOS 27 Apple Silicon smoke run measured 20 MB physical footprint (21 MB peak), 0.0% sampled idle CPU, and a 2.6 MB universal Release bundle. Launch time and behavior across supported macOS releases still need measurement before distribution claims are made.

@@ -9,12 +9,12 @@ struct MenuBarPanelView: View {
     let loginItems: LoginItemService
     let notifications: NotificationService
     let height: CGFloat
-    let onCustomDuration: () -> Void
     let onSettings: () -> Void
     let onAbout: () -> Void
     let onClose: () -> Void
 
     @State private var optionsExpanded = false
+    @State private var customEditorExpanded = false
     @State private var loginError: String?
     @State private var notificationStatus: UNAuthorizationStatus = .notDetermined
     @FocusState private var primaryFocused: Bool
@@ -169,10 +169,27 @@ struct MenuBarPanelView: View {
                 }
                 .menuStyle(.borderlessButton)
                 .frame(maxWidth: .infinity)
-                Button(action: onCustomDuration) {
-                    Label(String(localized: "Custom…"), systemImage: "slider.horizontal.3")
+                Button {
+                    withAnimation(.easeInOut(duration: 0.18)) {
+                        customEditorExpanded.toggle()
+                    }
+                } label: {
+                    Label(
+                        String(localized: customEditorExpanded ? "Hide" : "Custom…"),
+                        systemImage: customEditorExpanded ? "chevron.up" : "slider.horizontal.3"
+                    )
                 }
                 .buttonStyle(.bordered)
+            }
+            if customEditorExpanded {
+                CustomDurationView(
+                    onCancel: { customEditorExpanded = false },
+                    onChoose: { duration in
+                        session.choose(duration)
+                        customEditorExpanded = false
+                    }
+                )
+                .transition(.opacity.combined(with: .move(edge: .top)))
             }
             if let minutes = settings.defaultDuration.minuteCount,
                !quickMinutes.contains(minutes) {

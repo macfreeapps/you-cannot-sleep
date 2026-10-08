@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+
+- Expand custom duration entry inline in the menu bar panel, with editable hour and minute fields.
+
 ## 1.0.3
 
 - Use a vivid neon-yellow beacon icon while the awake session is active.

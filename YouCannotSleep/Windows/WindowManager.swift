@@ -3,7 +3,7 @@ import SwiftUI
 
 @MainActor
 final class WindowManager: NSObject, NSWindowDelegate {
-    private enum Kind: Hashable { case settings, welcome, about, customDuration }
+    private enum Kind: Hashable { case settings, welcome, about }
     private var windows: [Kind: NSWindow] = [:]
     private let settings: AppSettings
     private let session: SessionController
@@ -40,15 +40,6 @@ final class WindowManager: NSObject, NSWindowDelegate {
         }
     }
 
-    func openCustomDuration(onChoose: @escaping (SessionDuration) -> Void) {
-        present(.customDuration, title: String(localized: "Custom Duration"), size: NSSize(width: 400, height: 280)) {
-            CustomDurationView(onCancel: { [weak self] in self?.close(.customDuration) }, onChoose: { [weak self] duration in
-                onChoose(duration)
-                self?.close(.customDuration)
-            })
-        }
-    }
-
     func windowWillClose(_ notification: Notification) {
         guard let window = notification.object as? NSWindow else { return }
         windows = windows.filter { $0.value !== window }
@@ -75,9 +66,6 @@ final class WindowManager: NSObject, NSWindowDelegate {
         window.center()
         window.contentViewController = NSHostingController(rootView: content())
         window.setContentSize(size)
-        if kind == .customDuration {
-            window.contentMinSize = size
-        }
         window.delegate = self
         window.identifier = NSUserInterfaceItemIdentifier("YouCannotSleep.\(kind)")
         windows[kind] = window

@@ -1,41 +1,63 @@
 import SwiftUI
 
 struct CustomDurationView: View {
+    private enum Field: Hashable { case hours, minutes }
+
     let onCancel: () -> Void
     let onChoose: (SessionDuration) -> Void
-    @State private var hours = 1
+    @State private var hours = 0
     @State private var minutes = 0
     @State private var validationMessage: String?
+    @FocusState private var focusedField: Field?
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 10) {
             Text(String(localized: "Choose a duration from 1 minute to 24 hours."))
-                .font(.callout).foregroundStyle(.secondary)
-            HStack {
-                Stepper(value: $hours, in: 0...24) { Text(String(localized: "Hours: \(hours)")).fixedSize() }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                Stepper(value: $minutes, in: 0...59) { Text(String(localized: "Minutes: \(minutes)")).fixedSize() }
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+            HStack(alignment: .top, spacing: 12) {
+                durationField(title: String(localized: "Hours"), value: $hours, field: .hours)
+                durationField(title: String(localized: "Minutes"), value: $minutes, field: .minutes)
             }
             if let validationMessage { Text(validationMessage).foregroundStyle(.red).font(.caption) }
-            Spacer()
             HStack {
-                Button(String(localized: "Cancel"), action: onCancel)
-                    .buttonStyle(.bordered)
                 Spacer()
-                Button(String(localized: "Start")) {
-                    let total = hours * 60 + minutes
-                    guard (1...1440).contains(total) else {
-                        validationMessage = String(localized: "Enter a duration from 1 minute to 24 hours.")
-                        return
-                    }
-                    onChoose(.minutes(total))
-                }
-                .buttonStyle(.borderedProminent)
-                .keyboardShortcut(.defaultAction)
+                Button(String(localized: "Cancel"), action: onCancel)
+                Button(String(localized: "Start"), action: chooseDuration)
+                    .buttonStyle(.borderedProminent)
             }
         }
-        .padding(20)
-        .frame(width: 400, height: 280, alignment: .topLeading)
+        .buttonStyle(.bordered)
+        .controlSize(.regular)
+        .padding(12)
+        .background(.quaternary, in: RoundedRectangle(cornerRadius: 12))
+        .onAppear { focusedField = .hours }
+    }
+
+    private func durationField(title: String, value: Binding<Int>, field: Field) -> some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(title)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            TextField("0", value: value, format: .number)
+                .textFieldStyle(.roundedBorder)
+                .frame(width: 76)
+                .focused($focusedField, equals: field)
+                .accessibilityLabel(title)
+                .onSubmit {
+                    if field == .hours { focusedField = .minutes }
+                    else { chooseDuration() }
+                }
+        }
+    }
+
+    private func chooseDuration() {
+        let total = hours * 60 + minutes
+        guard (0...24).contains(hours), (0...59).contains(minutes), (1...1440).contains(total) else {
+            validationMessage = String(localized: "Enter a duration from 1 minute to 24 hours.")
+            return
+        }
+        onChoose(.minutes(total))
     }
 }

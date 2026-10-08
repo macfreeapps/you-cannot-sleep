@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+- Use a vivid neon-yellow beacon icon while the awake session is active.
+
 ## 1.0.2
 
 - Give the custom-duration window a fixed minimum layout so its labels and buttons remain visible.

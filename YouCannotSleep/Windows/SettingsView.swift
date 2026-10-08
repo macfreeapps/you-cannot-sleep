@@ -102,7 +102,6 @@ struct SettingsView: View {
 
     private var appearanceTab: some View {
         Form {
-            Toggle(String(localized: "Use accent color when active"), isOn: $settings.useAccentColor)
             Toggle(String(localized: "Show remaining time in menu bar"), isOn: $settings.showRemainingTime)
         }
         .formStyle(.grouped)

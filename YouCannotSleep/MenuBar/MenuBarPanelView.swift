@@ -226,7 +226,6 @@ struct MenuBarPanelView: View {
                         .font(.caption).foregroundStyle(.secondary)
                 }
                 Toggle(String(localized: "Toggle with left click"), isOn: $settings.toggleWithLeftClick)
-                Toggle(String(localized: "Use accent color when active"), isOn: $settings.useAccentColor)
                 Toggle(String(localized: "Show remaining time in menu bar"), isOn: $settings.showRemainingTime)
             }
             .toggleStyle(.checkbox)

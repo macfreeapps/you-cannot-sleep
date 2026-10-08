@@ -15,7 +15,7 @@ settings:
     CODE_SIGN_ENTITLEMENTS: YouCannotSleep/Resources/YouCannotSleep.entitlements
     GENERATE_INFOPLIST_FILE: YES
     INFOPLIST_KEY_CFBundleDisplayName: "You Cannot Sleep"
-    INFOPLIST_KEY_CFBundleShortVersionString: "1.0.0"
+    INFOPLIST_KEY_CFBundleShortVersionString: "1.0.1"
     INFOPLIST_KEY_LSUIElement: YES
     INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 You Cannot Sleep contributors"
     PRODUCT_BUNDLE_IDENTIFIER: io.github.macfreeapps.YouCannotSleep
@@ -56,8 +56,8 @@ targets:
     settings:
       base:
         CODE_SIGN_STYLE: Automatic
-        MARKETING_VERSION: 1.0.0
-        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0.1
+        CURRENT_PROJECT_VERSION: 2
         SWIFT_VERSION: "5.0"
         PRODUCT_MODULE_NAME: YouCannotSleep
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

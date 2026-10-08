@@ -35,7 +35,7 @@ final class StatusItemController: NSObject {
     func update() {
         guard let button = statusItem.button else { return }
         let active = session.isActive
-        let tint = active && settings.useAccentColor ? NSColor.controlAccentColor : nil
+        let tint = active ? NSColor(srgbRed: 0.0, green: 0.88, blue: 1.0, alpha: 1.0) : nil
         button.image = BeaconMenuIcon.image(active: active, tint: tint)
         if settings.showRemainingTime, let remaining = session.remainingMinutes() {
             button.title = countdownText(remaining)

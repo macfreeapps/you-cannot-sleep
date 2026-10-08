@@ -4,7 +4,7 @@ import Combine
 enum SettingKey: Hashable {
     case activateOnLaunch, launchAtLogin, notifications, allowDisplaySleep, allowScreenSaver
     case toggleWithLeftClick, turnOffOnBattery, batteryThresholdEnabled, batteryThreshold
-    case turnOnWhenChargerConnected, useAccentColor, showRemainingTime, defaultDuration
+    case turnOnWhenChargerConnected, showRemainingTime, defaultDuration
     case hotKey
 }
 
@@ -44,7 +44,6 @@ final class AppSettings: ObservableObject {
         static let batteryThresholdEnabled = "batteryThresholdEnabled"
         static let batteryThreshold = "batteryThreshold"
         static let turnOnWhenChargerConnected = "turnOnWhenChargerConnected"
-        static let useAccentColor = "useAccentColor"
         static let showRemainingTime = "showRemainingTime"
         static let defaultDuration = "defaultDuration"
         static let hotKey = "hotKey"
@@ -71,7 +70,6 @@ final class AppSettings: ObservableObject {
         }
     }
     @Published var turnOnWhenChargerConnected: Bool { didSet { save(turnOnWhenChargerConnected, key: Key.turnOnWhenChargerConnected, event: .turnOnWhenChargerConnected) } }
-    @Published var useAccentColor: Bool { didSet { save(useAccentColor, key: Key.useAccentColor, event: .useAccentColor) } }
     @Published var showRemainingTime: Bool { didSet { save(showRemainingTime, key: Key.showRemainingTime, event: .showRemainingTime) } }
     @Published var defaultDuration: SessionDuration { didSet { save(defaultDuration.id, key: Key.defaultDuration, event: .defaultDuration) } }
     @Published var hotKey: HotKeyCombination? { didSet { saveHotKey(); onChange?(.hotKey) } }
@@ -88,7 +86,6 @@ final class AppSettings: ObservableObject {
         batteryThresholdEnabled = defaults.object(forKey: Key.batteryThresholdEnabled) as? Bool ?? false
         storedBatteryThreshold = min(max(defaults.object(forKey: Key.batteryThreshold) as? Int ?? 20, 5), 50)
         turnOnWhenChargerConnected = defaults.object(forKey: Key.turnOnWhenChargerConnected) as? Bool ?? false
-        useAccentColor = defaults.object(forKey: Key.useAccentColor) as? Bool ?? false
         showRemainingTime = defaults.object(forKey: Key.showRemainingTime) as? Bool ?? false
         defaultDuration = SessionDuration(id: defaults.string(forKey: Key.defaultDuration) ?? "") ?? .indefinite
         if let data = defaults.data(forKey: Key.hotKey) {

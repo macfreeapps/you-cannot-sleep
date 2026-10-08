@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Show the menu bar beacon in vivid electric cyan while the awake session is active; keep the inactive icon monochrome.
+- Remove the obsolete accent-color option.
+
 ## 1.0.0
 
 - Initial implementation of the menu bar app, session and power management, settings, automation, and repository workflow.

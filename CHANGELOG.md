@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Give the custom-duration window a fixed minimum layout so its labels and buttons remain visible.
+
 ## 1.0.1
 
 - Show the menu bar beacon in vivid electric cyan while the awake session is active; keep the inactive icon monochrome.

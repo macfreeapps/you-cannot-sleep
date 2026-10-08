@@ -47,15 +47,11 @@ enum SessionDuration: Hashable, Codable, Identifiable {
             return String(localized: "Indefinitely")
         case .minutes(let raw):
             let minutes = Self.clamped(raw)
-            if minutes < 60 {
-                return String(localized: "\(minutes) minutes")
-            }
-            let hours = minutes / 60
-            let remainingMinutes = minutes % 60
-            if remainingMinutes == 0 {
-                return hours == 1 ? String(localized: "1 hour") : String(localized: "\(hours) hours")
-            }
-            return String(localized: "\(hours) hours \(remainingMinutes) minutes")
+            let formatter = DateComponentsFormatter()
+            formatter.allowedUnits = [.hour, .minute]
+            formatter.unitsStyle = .full
+            formatter.zeroFormattingBehavior = .dropAll
+            return formatter.string(from: TimeInterval(minutes * 60)) ?? String(localized: "\(minutes) minutes")
         }
     }
 

@@ -16,12 +16,14 @@ Run this checklist on supported macOS releases (13, 14, 15, and 26) where hardwa
 
 ## Menu and windows
 
-- [ ] Choose each 20-, 50-, and 120-minute quick session from the menu; confirm it activates or restarts the session and marks the selected duration.
+- [ ] Choose each timed duration button and the standalone Indefinitely button; confirm activation or restart, selection feedback, and countdown updates. Confirm More durations contains only finite presets and Custom opens the duration editor.
 - [ ] Check the original lighthouse app icon and the custom menu bar glyph in light/dark appearances, active/inactive states, and with accent coloring enabled.
 - [ ] Left-click, right-click, and Control-click route correctly with both click behavior settings.
 - [ ] Repeat on built-in and external displays, including a multi-display arrangement.
 - [ ] Confirm the status item remains accessible with VoiceOver and the countdown is stable in width.
-- [ ] Confirm menu header refreshes while open and timers stop after it closes.
+- [ ] Confirm the panel header refreshes while open, timers stop after it closes, and clicking outside or pressing Escape dismisses it.
+- [ ] Use keyboard focus and Return to activate buttons; verify VoiceOver announces duration names and selected state.
+- [ ] Expand Options, scroll to every toggle, and confirm the footer remains accessible on small screens.
 - [ ] Check Settings, Welcome, About, and custom duration window focus and single-instance behavior.
 - [ ] Enable “Group windows by application” in Mission Control and confirm there is no empty window.
 - [ ] Check Light mode, Dark mode, accent color updates, and Retina/non-Retina displays.

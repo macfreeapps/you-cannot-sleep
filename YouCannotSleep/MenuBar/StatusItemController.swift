@@ -53,7 +53,6 @@ final class StatusItemController: NSObject {
         }
         button.setAccessibilityLabel(accessibility)
         button.setAccessibilityHelp(String(localized: "Open the menu or toggle the awake session."))
-        menuBuilder.update()
         scheduleCountdownRefresh()
     }
 

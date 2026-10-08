@@ -23,7 +23,7 @@ Download `You Cannot Sleep.app` from a release and move it to `/Applications`. C
 
 Open `YouCannotSleep.xcodeproj` in Xcode, or regenerate it from `project.yml` with XcodeGen. Build and run the `YouCannotSleep` scheme. The project targets macOS 13 Ventura and builds a universal arm64/x86_64 binary.
 
-The bundle identifier is `io.github.tarudesu.YouCannotSleep`. The repository and issue links point to [github.com/tarudesu/you-cannot-sleep](https://github.com/tarudesu/you-cannot-sleep).
+The bundle identifier is `io.github.macfreeapps.YouCannotSleep`. The repository and issue links point to [github.com/macfreeapps/you-cannot-sleep](https://github.com/macfreeapps/you-cannot-sleep).
 
 ## Automation
 

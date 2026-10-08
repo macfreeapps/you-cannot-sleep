@@ -68,9 +68,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         AppRuntime.sessionController = session
         servicesAreReady = true
 
-        session.onChange = { [weak statusItem, weak menuBuilder] in
+        session.onChange = { [weak statusItem] in
             statusItem?.update()
-            menuBuilder?.update()
         }
         powerMonitor.onChange = { [weak session] state in session?.updatePowerState(state) }
         powerMonitor.refresh()
@@ -108,6 +107,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         systemMonitor?.stop()
         hotKey?.stop()
         statusItem?.stop()
+        menuBuilder?.stop()
         AppRuntime.sessionController = nil
     }
 
